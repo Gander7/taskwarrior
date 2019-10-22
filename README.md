@@ -3,6 +3,7 @@
 [![Travis build status](https://travis-ci.org/Gander7/React-Baseline.svg?branch=master)](https://travis-ci.org/Gander7/taskwarrior)
 
 Thank you for taking a look at Taskwarrior!
+This is a fork of the original taskwarrior [here](https://github.com/GothenburgBitFactory/taskwarrior.git)
 
 Taskwarrior is a GTD, todo list, task management, command line utility with a
 multitude of features. It is a portable, well supported and very active Open
@@ -19,8 +20,7 @@ At the site you'll find online documentation, downloads, news and more.
 
 For support options, take a look at [taskwarrior.org/support](https://taskwarrior.org/support)
 
-Please use pull requests, or alternately send your code patches to
-[support@gothenburgbitfactory.org](mailto:support@gothenburgbitfactory.org)
+Please use pull requests.
 
 ## Branching Model
 
@@ -30,7 +30,7 @@ We use the following branching model:
   from the latest tarball, or installing a binary package. No development is
   done on the `master` branch.
 
-* `2.6.0` is the current development branch. All work is done here, and upon
+* `dev` is the current development branch. All work is done here, and upon
   release it will be merged to `master`. This development branch is not stable,
   may not even build or pass tests, and should be treated accordingly.
   Make backups.
@@ -52,17 +52,17 @@ Download the tarball, and expand it:
 
 Or clone this repository:
 
-    $ git clone --recursive -b 2.6.0 https://github.com/GothenburgBitFactory/taskwarrior.git
+    $ git clone --recursive -b dev https://github.com/Gander7/taskwarrior.git
     $ cd taskwarrior
 
 In case of errors with libshared - URL pointing to git.tasktools.org in either .git/config or .gitmodules:
 
-    $ sed -i 's/git.tasktools.org\/TM/github.com\/GothenburgBitFactory/' .git/config
+    $ sed -i 's/git.tasktools.org\/TM/github.com\/Gander7/' .git/config
     $ git submodule update
 
 or
 
-    $ sed -i 's/git.tasktools.org\/TM/github.com\/GothenburgBitFactory/' .gitmodules
+    $ sed -i 's/git.tasktools.org\/TM/github.com\/Gander7/' .gitmodules
     $ git submodule init
     $ git submodule update
 
@@ -81,7 +81,7 @@ Then build:
 Your contributions are especially welcome.
 Whether it comes in the form of code patches, ideas, discussion, bug reports, encouragement or criticism, your input is needed.
 
-Visit [Github](https://github.com/GothenburgBitFactory/taskwarrior) and participate in the future of Taskwarrior.
+Visit [Github](https://github.com/Gander7/taskwarrior) and participate in the future of Taskwarrior.
 
 ## License
 
